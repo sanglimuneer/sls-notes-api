@@ -9,7 +9,7 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - echo "Installing serverless CLI"
+#      - echo "Installing serverless CLI"
       - npm -i -g serverless@2
       - echo "Installing npm dependencies"
       - npm install
