@@ -9,11 +9,14 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - echo Installing serverless CLI
+      - echo "Installing serverless CLI"
       - npm -i -g serverless@2
-      - echo Installing npm dependencies
+      - echo "Installing npm dependencies"
       - npm install
-        
+  pre_build:
+    commands:
+      - echo "Serverless CLI installed successfully"
+      - serverless --version
   build:
     on-failure: ABORT
     commands:
