@@ -10,7 +10,7 @@ phases:
       nodejs: 18
     commands:
       - echo Installing serverless CLI
-      - npm -i -g serverless@2
+      - npm -i serverless@2
       - echo Installing npm dependencies
       - npm install
         
